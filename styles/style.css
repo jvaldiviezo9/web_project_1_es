@@ -1,5 +1,5 @@
 body * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -355,6 +355,86 @@ body * {
 }
 
 
+/* Footer */
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  /* position: relative; */
+
+  background-color: #1F1F1F;
+  color: white;
+
+  min-height: 350px;
+}
+
+.footer__columns{
+  display: flex;
+  width: 90%;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer__column_content_copyright{
+  flex-basis: 711px;
+}
+
+.footer__list{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__author{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+
+  position: absolute;
+  bottom: 18px;
+  padding-top: 18px;
+  left: 0;
+}
+
+.footer__social-icons{
+  padding-right: 10px;
+  /* height: 16;
+  width: 16px; */
+
+}
+
+.footer__column-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  list-style: none;
+}
+
+.logo_place_footer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 183px;
+  height: 35px;
+}
+
+.column__heading{
+  padding-bottom: 20px;
+
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 
