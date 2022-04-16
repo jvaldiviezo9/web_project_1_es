@@ -1,382 +1,92 @@
-body * {
-  /* border: 1px solid red; */
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url(../vendor/normalize.css);
 
-.page {
-  min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
-  max-width: 1600px;
-  /* here we've set a maximum page width */
-  margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* parameters for the header section */
-  display: flex;
-  background-color: #f2f2f2;
-  /*needed to have all the parameters contained keep their position*/
-  position: relative;
-}
+/* Nota:
+Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM: */
+/* https://en.bem.info/methodology/filestructure/#flex */
 
-.logo {
-  width: 154px;
-  height: 31px;
-}
+/* Importaciones generales */
+@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
 
-.logo_place_header {
-  position: absolute;
-  z-index: 3;
-  left: 64px;
-  top: 30px;
-}
 
-.header__title {
-  display: flex;
-  align-items: center;
-  margin-left: 64px;
-  width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: bold;
-  z-index: 3;
-}
+/* bloque logo */
+@import url(../blocks/logo/logo.css);
 
-.header__subtitle {
-  position: absolute;
-  left: 64px;
-  bottom: 30px;
-  width: 388px;
-  z-index: 3;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-}
+/* Section Header */
+/* Aqui decidi utiliar la estructura Nested tal cual se muestra en la documentacion oficial */
+/* https://en.bem.info/methodology/filestructure/#Nested */
 
-.header__main-illustration {
-  position: absolute;
-  /* object-fit: cover; */
-  bottom: 0;
-  right: 0;
-  width: 756px;
-  height: 608px;
-  z-index: 1;
-}
+@import url(../blocks//header/header.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__square/header__square.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__title/header__title.css);
 
-.header__square {
-  position: absolute;
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  z-index: 0;
-  top: 64px;
-  right: 0;
-}
 
-.header__link {
-  text-decoration: none;
-}
+/* Section Description */
+/* Aqui decidi utiliar la estructura Flat tal cual se muestra en la documentacion oficial */
+/* https://en.bem.info/methodology/filestructure/#Flat */
+/* y todas las siguientes importaciones seran con flat */
 
-.description {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  /* min-width: 784px; */
-}
+@import url(../blocks/description/description.css);
 
-.two-columns__brief {
-  width: 175px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: #2f80ed;
-}
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/two-columns__brief.css);
+@import url(../blocks/two-columns/two-columns__main-text.css);
+@import url(../blocks/two-columns/two-columns__paragraph.css);
+@import url(../blocks/two-columns/two-columns__span-accent.css);
 
-.two-columns__main-text {
-  width: 80%;
-  min-width: 784px;
-}
-
-.two-columns__paragraph {
-  padding-bottom: 30px;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.two-columns__paragraph:nth-child(3) {
-  padding-bottom: 0;
-}
 
 /* Section Digits */
 
-.digits {
-  /* padding-top: 100px; */
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
 
-.section-title {
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  width: 60%;
-  padding-bottom: 20px;
-}
 
-.section-subtitle {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  width: 60%;
-  padding-bottom: 60px;
-}
+/* Block table */
 
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 20px;
-}
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/table__cell.css);
+@import url(../blocks/table/table__heading.css);
+@import url(../blocks/table/table__text.css);
 
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.table {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1100px;
-}
-
-.table__cell {
-  list-style: none;
-  width: 250px;
-  padding-bottom: 60px;
-}
-
-.table__cell .table__text:nth-child(3) {
-  padding-top: 20px;
-  /*color: blue;*/
-}
 
 /*Feynman section*/
 
-.feynman {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background-image: url("/images/feynman.png");
-  background-repeat: no-repeat;
-  background-size: 867px 637px;
-  background-position: bottom 0 left 0;
-  padding-top: 100px;
-  width: 100%;
-  height: 790px;
-  background-color: #f2f2f2;
-}
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/feynman/feynman__title.css);
+@import url(../blocks/feynman/feynman__subtitle.css);
+@import url(../blocks/feynman/feynman__link.css);
 
-.feynman__title {
-  width: 775px;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: bold;
-  text-align: center;
-}
 
-.feynman__subtitle {
-  text-align: center;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  padding-top: 70px;
-}
-
-.feynman__link {
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  color: #2f80ed;
-  text-decoration: none;
-}
-
+/* /////////////////////////////////// */
 /*Kaufman*/
 
-.kaufman {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #1f1f1f;
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
+@import url(../blocks/kaufman/kaufnam.css);
+@import url(../blocks/kaufman/kaufman__triangle.css);
 
-.section-title__theme_dark {
-  color: white;
-  width: 60%;
-  padding-bottom: 20px;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  z-index: 4;
-}
+/* section and subsection */
+@import url(../blocks/section-title/section-title__theme_dark.css);
+@import url(../blocks/section-subtitle/section-subtitle__theme_dark);
 
-.section-subtitle__theme_dark {
-  color: white;
-  width: 60%;
-  text-align: center;
-  padding-bottom: 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  z-index: 4;
-}
+@import url(../blocks/table/table__theme_dark.css);
+@import url(../blocks/table/table__theme_dark.css);
+@import url(../blocks/table/table__cell_theme_dark.css);
+@import url(../blocks/table/table__heading_theme_dark.css);
+@import url(../blocks/table/table__text_theme_dark.css);
 
-.table__theme_dark {
-  width: 1100px;
-  z-index: 3;
-}
-
-.table__cell_theme_dark {
-  padding-top: 80px;
-  width: 200px;
-  margin: 0;
-  padding-bottom: 0;
-  z-index: 3;
-}
-
-.table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.table__text_theme_dark {
-  line-height: 1, 2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.kaufman__triangle {
-  position: absolute;
-  right: -124px;
-  top: 0;
-  z-index: 1;
-}
 
 /* Footer */
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  /* position: relative; */
-  background-color: #1f1f1f;
-  color: white;
-  min-height: 350px;
-}
-
-.footer__columns {
-  display: flex;
-  width: 90%;
-  /* flex-direction: column; */
-  justify-content: space-between;
-  position: relative;
-}
-
-.footer__column_content_copyright {
-  flex-basis: 711px;
-}
-
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-
-.footer__author {
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  position: absolute;
-  bottom: 18px;
-  padding-top: 18px;
-  left: 0;
-}
-
-.footer__social-icons {
-  padding-right: 10px;
-  /*height: 16px;*/
-  /*width: 16px;*/
-}
-
-.footer__column-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  padding: 0;
-  list-style: none;
-}
-
-.logo_place_footer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 183px;
-  height: 35px;
-}
-
-.column__heading {
-  padding-bottom: 20px;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/footer__columns.css);
+@import url(../blocks/footer/footer__column_content_copyright.css);
+@import url(../blocks/footer/footer__list.css);
+@import url(../blocks/footer/footer__author.css);
+@import url(../blocks/footer/footer__social-icons.css);
+@import url(../blocks/footer/footer__column-link.css);
+@import url(../blocks/footer/footer__column-heading.css);
