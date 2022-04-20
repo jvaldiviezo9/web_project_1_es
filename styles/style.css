@@ -10,6 +10,10 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 @import url(../blocks/page/page.css);
 
 
+/* Importaciones globales */
+@import url(../blocks/modificators/modificators.css);
+
+
 /* bloque logo */
 @import url(../blocks/logo/logo.css);
 
@@ -90,3 +94,6 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 @import url(../blocks/footer/footer__social-icons.css);
 @import url(../blocks/footer/footer__column-link.css);
 @import url(../blocks/footer/footer__column-heading.css);
+
+
+

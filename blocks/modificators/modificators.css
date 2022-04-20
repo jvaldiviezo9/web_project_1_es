@@ -1,0 +1,9 @@
+.hover-visual{
+  opacity: 100%;
+  transition: opacity 1s linear;
+}
+
+
+.hover-visual:hover{
+  opacity: 40%;
+}
