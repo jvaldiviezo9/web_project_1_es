@@ -14,6 +14,9 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 @import url(../blocks/modificators/modificators.css);
 
 
+/* Animations */
+@import url(../../rotation/rotation.css);
+
 /* bloque logo */
 @import url(../blocks/logo/logo.css);
 
@@ -77,11 +80,10 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 @import url(../blocks/kaufman/kaufman__triangle.css);
 
 /* section and subsection */
-@import url(../blocks/section-title/section-title__theme_dark.css);
-@import url(../blocks/section-subtitle/section-subtitle__theme_dark);
+@import url(../blocks/section-title/section-title_theme_dark.css);
+@import url(../blocks/section-subtitle/section-subtitle_theme_dark);
 
-@import url(../blocks/table/table__theme_dark.css);
-@import url(../blocks/table/table__theme_dark.css);
+@import url(../blocks/table/table_theme_dark.css);
 @import url(../blocks/table/table__cell_theme_dark.css);
 @import url(../blocks/table/table__heading_theme_dark.css);
 @import url(../blocks/table/table__text_theme_dark.css);
