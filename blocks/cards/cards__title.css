@@ -1,0 +1,15 @@
+.cards__title{
+  padding-top: 43px;
+  padding-bottom: 16px;
+  /* En esta parte noto que el diseño tiene como si fuera un bloque
+  pero no menciona el tamaño maximo. Aqui use 120 para fijarlo*/
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}

@@ -3,4 +3,6 @@
   right: -124px;
   top: 0;
   z-index: 1;
+
+  animation: rotation-figure 20s linear infinite;
 }

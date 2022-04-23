@@ -13,9 +13,8 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 /* Importaciones globales */
 @import url(../blocks/modificators/modificators.css);
 
-
 /* Animations */
-@import url(../../rotation/rotation.css);
+@import url(../blocks/rotation/rotation.css);
 
 /* bloque logo */
 @import url(../blocks/logo/logo.css);
@@ -78,6 +77,43 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 
 @import url(../blocks/kaufman/kaufnam.css);
 @import url(../blocks/kaufman/kaufman__triangle.css);
+
+
+
+/* Cards */
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/cards__description.css);
+@import url(../blocks/cards/cards__image.css);
+@import url(../blocks/cards/cards__item.css);
+@import url(../blocks/cards/cards__title.css);
+
+
+/* Khan */
+
+@import url(../blocks/khan/khan.css);
+@import url(../blocks/khan/khan__author.css);
+@import url(../blocks/khan/khan__book-container.css);
+@import url(../blocks/khan/khan__book-link.css);
+@import url(../blocks/khan/khan__book-pic.css);
+@import url(../blocks/khan/khan__quote-author-subline.css);
+@import url(../blocks/khan/khan__quote-author.css);
+@import url(../blocks/khan/khan__quote.css);
+@import url(../blocks/khan/khan__title.css);
+
+
+/* Resources */
+
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/resources__logo-zone.css);
+@import url(../blocks/resources/resources__logo.css);
+
+
+/* Video */
+
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/video__iframe.css);
+@import url(../blocks/video/video__iframes.css);
+@import url(../blocks/video/video__placeholder.css);
 
 /* section and subsection */
 @import url(../blocks/section-title/section-title_theme_dark.css);
