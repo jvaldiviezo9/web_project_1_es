@@ -44,6 +44,9 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 @import url(../blocks/two-columns/two-columns__span-accent.css);
 
 
+/* section techniques */
+@import url(../blocks/techniques/techniques.css);
+
 /* Section Digits */
 
 @import url(../blocks/digits/digits.css);
