@@ -23,7 +23,7 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 /* Aqui decidi utiliar la estructura Nested tal cual se muestra en la documentacion oficial */
 /* https://en.bem.info/methodology/filestructure/#Nested */
 
-@import url(../blocks//header/header.css);
+@import url(../blocks/header/header.css);
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/header/__square/header__square.css);
@@ -54,6 +54,9 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 @import url(../blocks/digits/digits.css);
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
+
+/*oakley*/
+@import url(../blocks/oakley/oakley.css);
 
 
 /* Block table */
@@ -113,11 +116,11 @@ Para esta estructura BEM, se tomara un enfoque Flex de acuerdo al manual de BEM:
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/video__iframe.css);
 @import url(../blocks/video/video__iframes.css);
-@import url(../blocks/video/video__placeholder.css);
+
 
 /* section and subsection */
 @import url(../blocks/section-title/section-title_theme_dark.css);
-@import url(../blocks/section-subtitle/section-subtitle_theme_dark);
+@import url(../blocks/section-subtitle/section-subtitle_theme_dark.css);
 
 @import url(../blocks/table/table_theme_dark.css);
 @import url(../blocks/table/table__cell_theme_dark.css);
